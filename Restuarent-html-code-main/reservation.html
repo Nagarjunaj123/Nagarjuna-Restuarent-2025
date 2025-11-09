@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations - Bella Vista Restaurant</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Bella Vista</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="menu.html" class="nav-link">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="reservation.html" class="nav-link active">Reservations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Make a Reservation</h1>
+            <p>Reserve your table for an unforgettable dining experience</p>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section class="reservation-section">
+        <div class="container">
+            <div class="reservation-content">
+                <div class="reservation-form-section">
+                    <form class="reservation-form" id="reservationForm">
+                        <h2>Book Your Table</h2>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="resFirstName">First Name</label>
+                                <input type="text" id="resFirstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="resLastName">Last Name</label>
+                                <input type="text" id="resLastName" name="lastName" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="resEmail">Email Address</label>
+                                <input type="email" id="resEmail" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="resPhone">Phone Number</label>
+                                <input type="tel" id="resPhone" name="phone" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="resDate">Preferred Date</label>
+                                <input type="date" id="resDate" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="resTime">Preferred Time</label>
+                                <select id="resTime" name="time" required>
+                                    <option value="">Select time</option>
+                                    <option value="17:00">5:00 PM</option>
+                                    <option value="17:30">5:30 PM</option>
+                                    <option value="18:00">6:00 PM</option>
+                                    <option value="18:30">6:30 PM</option>
+                                    <option value="19:00">7:00 PM</option>
+                                    <option value="19:30">7:30 PM</option>
+                                    <option value="20:00">8:00 PM</option>
+                                    <option value="20:30">8:30 PM</option>
+                                    <option value="21:00">9:00 PM</option>
+                                    <option value="21:30">9:30 PM</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="partySize">Party Size</label>
+                                <select id="partySize" name="partySize" required>
+                                    <option value="">Select party size</option>
+                                    <option value="1">1 person</option>
+                                    <option value="2">2 people</option>
+                                    <option value="3">3 people</option>
+                                    <option value="4">4 people</option>
+                                    <option value="5">5 people</option>
+                                    <option value="6">6 people</option>
+                                    <option value="7">7 people</option>
+                                    <option value="8">8 people</option>
+                                    <option value="8+">8+ people</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="seatingPreference">Seating Preference</label>
+                                <select id="seatingPreference" name="seatingPreference">
+                                    <option value="">No preference</option>
+                                    <option value="window">Window table</option>
+                                    <option value="terrace">Terrace seating</option>
+                                    <option value="quiet">Quiet area</option>
+                                    <option value="bar">Bar seating</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="occasion">Special Occasion</label>
+                            <select id="occasion" name="occasion">
+                                <option value="">No special occasion</option>
+                                <option value="birthday">Birthday</option>
+                                <option value="anniversary">Anniversary</option>
+                                <option value="business">Business dinner</option>
+                                <option value="date">Date night</option>
+                                <option value="celebration">Celebration</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="specialRequests">Special Requests / Dietary Restrictions</label>
+                            <textarea id="specialRequests" name="specialRequests" rows="4" placeholder="Please let us know about any allergies, dietary restrictions, or special requests..."></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="confirmTerms" name="confirmTerms" required>
+                            <label for="confirmTerms">I agree to the reservation terms and cancellation policy</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Make Reservation</button>
+                    </form>
+                </div>
+
+                <div class="reservation-info-section">
+                    <div class="reservation-info-card">
+                        <h3>Reservation Information</h3>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Dining Hours</h4>
+                                <p>Monday - Thursday: 5:00 PM - 10:00 PM<br>
+                                   Friday - Saturday: 5:00 PM - 11:00 PM<br>
+                                   Sunday: 4:00 PM - 9:00 PM</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <h4>Large Parties</h4>
+                                <p>For parties of 8 or more, please call us directly at (555) 123-4567 to ensure we can accommodate your group.</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <div>
+                                <h4>Advance Booking</h4>
+                                <p>We recommend booking at least 2 weeks in advance, especially for weekend reservations.</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Questions?</h4>
+                                <p>Call us at (555) 123-4567 or email reservations@bellavista.com for assistance.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="policies-card">
+                        <h3>Reservation Policies</h3>
+                        
+                        <div class="policy-item">
+                            <h4>Cancellation Policy</h4>
+                            <p>Please provide at least 24 hours notice for cancellations. Same-day cancellations may incur a fee.</p>
+                        </div>
+
+                        <div class="policy-item">
+                            <h4>Dress Code</h4>
+                            <p>We maintain a business casual to formal dress code. Please, no shorts, flip-flops, or athletic wear.</p>
+                        </div>
+
+                        <div class="policy-item">
+                            <h4>Time Limits</h4>
+                            <p>Tables are reserved for 2 hours. Extensions may be available based on availability.</p>
+                        </div>
+
+                        <div class="policy-item">
+                            <h4>No-Show Policy</h4>
+                            <p>No-show reservations may be charged a fee and could affect future booking privileges.</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <h3>Need Help?</h3>
+                        <p>Our reservation team is here to assist you with any special requests or questions.</p>
+                        <div class="contact-details">
+                            <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                            <p><i class="fas fa-envelope"></i> reservations@bellavista.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Available Times Display -->
+    <section class="available-times" id="availableTimes" style="display: none;">
+        <div class="container">
+            <h3>Available Times for <span id="selectedDate"></span></h3>
+            <div class="time-slots" id="timeSlots">
+                <!-- Time slots will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Bella Vista</h3>
+                    <p>Experience fine dining with breathtaking views in the heart of the city.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="reservation.html">Reservations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Fine Dining St, City</p>
+                        <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@bellavista.com</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Hours</h4>
+                    <div class="hours">
+                        <p>Monday - Thursday: 5:00 PM - 10:00 PM</p>
+                        <p>Friday - Saturday: 5:00 PM - 11:00 PM</p>
+                        <p>Sunday: 4:00 PM - 9:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Bella Vista Restaurant. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

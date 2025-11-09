@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Bella Vista Restaurant</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>Bella Vista</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="menu.html" class="nav-link active">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="reservation.html" class="nav-link">Reservations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Menu</h1>
+            <p>Exquisite dishes crafted with passion and the finest ingredients</p>
+        </div>
+    </section>
+
+    <!-- Menu Categories -->
+    <section class="menu-categories">
+        <div class="container">
+            <div class="menu-tabs">
+                <button class="tab-button active" data-category="appetizers">Appetizers</button>
+                <button class="tab-button" data-category="main-courses">Main Courses</button>
+                <button class="tab-button" data-category="desserts">Desserts</button>
+                <button class="tab-button" data-category="beverages">Beverages</button>
+            </div>
+
+            <!-- Appetizers -->
+            <div class="menu-category active" id="appetizers">
+                <h2>Appetizers</h2>
+                <div class="menu-items">
+                    <div class="menu-item-card">
+                        <div class="item-image">
+                            <img src="https://images.pexels.com/photos/1633525/pexels-photo-1633525.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Seared Scallops">
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>Seared Scallops</h3>
+                                <span class="price">159.24 RS-/</span>
+                            </div>
+                            <p>Pan-seared sea scallops with cauliflower purée and crispy pancetta</p>
+                            <span class="dietary-info">Gluten-free</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item-card">
+                        <div class="item-image">
+                            <img src="https://images.pexels.com/photos/1438672/pexels-photo-1438672.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Burrata">
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>Burrata with Prosciutto</h3>
+                                <span class="price">148.88 RS-/</span>
+                            </div>
+                            <p>Fresh burrata cheese with San Daniele prosciutto, arugula, and fig jam</p>
+                            <span class="dietary-info">Vegetarian</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item-card">
+                        <div class="item-image">
+                            <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Oysters">
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>Fresh Oysters</h3>
+                                <span class="price">266.04 RS-/ each</span>
+                            </div>
+                            <p>Daily selection of fresh oysters with mignonette and cocktail sauce</p>
+                            <span class="dietary-info">Gluten-free</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item-card">
+                        <div class="item-image">
+                            <img src="https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Foie Gras">
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>Seared Foie Gras</h3>
+                                <span class="price">228.32 RS-/</span>
+                            </div>
+                            <p>Pan-seared foie gras with cherry compote and brioche toast</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Courses -->
+            <div class="menu-category" id="main-courses">
+                <h2>Main Courses</h2>
+                <div class="menu-items">
+                    <div class="menu-item-card">
+                        <div class="item-image">
+                            <img src="https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Grilled Salmon">
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>Grilled Atlantic Salmon</h3>
+                                <span class="price">50.24 RS-/</span>
+                            </div>
+                            <p>Fresh Atlantic salmon with lemon herb butter, roasted vegetables, and quinoa pilaf</p>
+                            <span class="dietary-info">Gluten-free</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item-card">
+                        <div class="item-image">
+                            <img src="https://images.pexels.com/photos/2313686/pexels-photo-2313686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Ribeye Steak">
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>Prime Ribeye Steak</h3>
+                                <span class="price">724.60 RS-/</span>
+                            </div>
+                            <p>28-day dry-aged ribeye with truffle butter, roasted fingerling potatoes, and seasonal vegetables</p>
+                            <span class="dietary-info">Gluten-free</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item-card">
+                        <div class="item-image">
+                            <img src="https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Lobster Ravioli">
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>Lobster Ravioli</h3>
+                                <span class="price">303.80 RS-/</span>
+                            </div>
+                            <p>Handmade ravioli filled with Maine lobster in a light tomato cream sauce</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item-card">
+                        <div class="item-image">
+                            <img src="https://images.pexels.com/photos/1247755/pexels-photo-1247755.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Duck Breast">
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>Roasted Duck Breast</h3>
+                                <span class="price">837.76 RS-/</span>
+                            </div>
+                            <p>Pekin duck breast with cherry glaze, wild rice, and braised red cabbage</p>
+                            <span class="dietary-info">Gluten-free</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item-card">
+                        <div class="item-image">
+                            <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Lamb Chops">
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>Herb-Crusted Lamb Rack</h3>
+                                <span class="price">369.84 RS-/</span>
+                            </div>
+                            <p>New Zealand lamb rack with rosemary crust, ratatouille, and mint jus</p>
+                            <span class="dietary-info">Gluten-free</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item-card">
+                        <div class="item-image">
+                            <img src="https://images.pexels.com/photos/1640770/pexels-photo-1640770.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Vegetarian Risotto">
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>Wild Mushroom Risotto</h3>
+                                <span class="price">228 RS-/</span>
+                            </div>
+                            <p>Creamy Arborio rice with seasonal wild mushrooms, truffle oil, and Parmesan</p>
+                            <span class="dietary-info">Vegetarian</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desserts -->
+            <div class="menu-category" id="desserts">
+                <h2>Desserts</h2>
+                <div class="menu-items">
+                    <div class="menu-item-card">
+                        <div class="item-image">
+                            <img src="https://images.pexels.com/photos/1126359/pexels-photo-1126359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Chocolate Soufflé">
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>Dark Chocolate Soufflé</h3>
+                                <span class="price">241.52 RS-/</span>
+                            </div>
+                            <p>Rich dark chocolate soufflé with vanilla bean ice cream and raspberry coulis</p>
+                            <span class="dietary-info">Vegetarian</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item-card">
+                        <div class="item-image">
+                            <img src="https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Tiramisu">
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>Classic Tiramisu</h3>
+                                <span class="price">250.12 RS-/</span>
+                            </div>
+                            <p>Traditional Italian tiramisu with ladyfingers, espresso, and mascarpone</p>
+                            <span class="dietary-info">Vegetarian</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item-card">
+                        <div class="item-image">
+                            <img src="https://images.pexels.com/photos/1028714/pexels-photo-1028714.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Crème Brûlée">
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>Vanilla Crème Brûlée</h3>
+                                <span class="price">210.34 RS-/</span>
+                            </div>
+                            <p>Classic vanilla custard with caramelized sugar crust and fresh berries</p>
+                            <span class="dietary-info">Vegetarian, Gluten-free</span>
+                        </div>
+                    </div>
+
+                    <div class="menu-item-card">
+                        <div class="item-image">
+                            <img src="https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Cheesecake">
+                        </div>
+                        <div class="item-content">
+                            <div class="item-header">
+                                <h3>New York Cheesecake</h3>
+                                <span class="price">100.45 RS-/</span>
+                            </div>
+                            <p>Creamy cheesecake with graham cracker crust and seasonal fruit compote</p>
+                            <span class="dietary-info">Vegetarian</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Beverages -->
+            <div class="menu-category" id="beverages">
+                <h2>Beverages</h2>
+                <div class="beverages-section">
+                    <div class="beverage-category">
+                        <h3>Wine Selection</h3>
+                        <div class="beverage-items">
+                            <div class="beverage-item">
+                                <div class="beverage-info">
+                                    <h4>Champagne Dom Pérignon 2012</h4>
+                                    <p>Bottle: 4830 RS-/ | Glass: 990 RS-/</p>
+                                </div>
+                            </div>
+                            <div class="beverage-item">
+                                <div class="beverage-info">
+                                    <h4>Caymus Cabernet Sauvignon</h4>
+                                    <p>Bottle: 850 RS-/ | Glass: 280 RS-/</p>
+                                </div>
+                            </div>
+                            <div class="beverage-item">
+                                <div class="beverage-info">
+                                    <h4>Chablis Premier Cru</h4>
+                                    <p>Bottle: 790 RS-/ | Glass: 216 RS-/</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="beverage-category">
+                        <h3>Craft Cocktails</h3>
+                        <div class="beverage-items">
+                            <div class="beverage-item">
+                                <div class="beverage-info">
+                                    <h4>Bella Vista Martini</h4>
+                                    <p>Premium gin, dry vermouth, olives - 350 RS-/</p>
+                                </div>
+                            </div>
+                            <div class="beverage-item">
+                                <div class="beverage-info">
+                                    <h4>Smoked Old Fashioned</h4>
+                                    <p>Bourbon, maple syrup, cherry wood smoke - 716 RS-/</p>
+                                </div>
+                            </div>
+                            <div class="beverage-item">
+                                <div class="beverage-info">
+                                    <h4>Elderflower Gin Fizz</h4>
+                                    <p>Gin, elderflower, lime, prosecco - 814 RS-/</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="beverage-category">
+                        <h3>Non-Alcoholic</h3>
+                        <div class="beverage-items">
+                            <div class="beverage-item">
+                                <div class="beverage-info">
+                                    <h4>Fresh Juices</h4>
+                                    <p>Orange, grapefruit, cranberry - 70 RS-/</p>
+                                </div>
+                            </div>
+                            <div class="beverage-item">
+                                <div class="beverage-info">
+                                    <h4>Sparkling Water</h4>
+                                    <p>San Pellegrino, Perrier - 50 RS-/</p>
+                                </div>
+                            </div>
+                            <div class="beverage-item">
+                                <div class="beverage-info">
+                                    <h4>Premium Coffee</h4>
+                                    <p>Espresso, cappuccino, latte - 50 RS-/</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Bella Vista</h3>
+                    <p>Experience fine dining with breathtaking views in the heart of the city.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="reservation.html">Reservations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 288 Sky Towers St, Vijayawada</p>
+                        <p><i class="fas fa-phone"></i> (+91) 9390140071</p>
+                        <p><i class="fas fa-envelope"></i> info@bellavista.com</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Hours</h4>
+                    <div class="hours">
+                        <p>Monday - Thursday: 5:00 PM - 10:00 PM</p>
+                        <p>Friday - Saturday: 5:00 PM - 11:00 PM</p>
+                        <p>Sunday: 4:00 PM - 9:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2020 Bella Vista Restaurant. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
